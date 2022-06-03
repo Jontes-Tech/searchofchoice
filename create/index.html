@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="https://jontes.page/bulma-prefers-dark.css" />
 </head>
 <body>
+	<script src="script.js"></script>
     <section class="hero">
         <div class="hero-body">
           <p class="title">
@@ -18,7 +19,7 @@
             Below you can create a link to a search engine.
           </p>
           <input id="textbox" type="text"></input>
-          <button onclick="alert('https://searchofchoice.jontes.page/?q=' + encodeURIComponent(document.getElementById('textbox').value) +'\nor\nhttps://searchofchoice.vercel.app/?q='+encodeURIComponent(document.getElementById('textbox').value));">Create Link</button>
+          <button onclick="submit();">Create Link</button>
         </div>
       </section>
     <script src="script.js"></script>
