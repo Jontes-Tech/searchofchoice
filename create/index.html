@@ -7,6 +7,10 @@
     <title>Create a SearchOfChoice Link</title>
     <link rel="stylesheet" href="https://jontes.page/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="https://jontes.page/bulma-prefers-dark.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
 </head>
 <body>
 	<script src="/create/script.js"></script>
@@ -18,10 +22,24 @@
           <p class="subtitle">
             Below you can create a link to a search engine.
           </p>
-          <input id="textbox" type="text"></input>
-          <button onclick="submit();">Create Link</button>
+          <div class="container">
+          <label for="textbox">Enter your search term</label>
+          <input class="input" name="textbox" id="textbox" type="text"></input>
+          <br>
+          <label for="domain">Choose a domain name:</label>
+          <br>
+          <div class="select">
+          <select name="domain" id="domain">
+            <option value="jontespage">SearchOfChoice.Jontes.Page (Long branded)</option>
+            <option value="short">Soc.Jontes.Page (Short branded)</option>
+            <option value="vercelapp">SearchOfChoice.Vercel.App (Long unbranded)</option>
+            <button class="button is-primary"onclick="submit();">Create Link</button>
+          </select>
+          </div>
+          <br>
+          <button class="button is-primary" onclick="submit();">Create Link</button>
         </div>
+      </div>
       </section>
-    <script src="script.js"></script>
 </body>
 </html>
