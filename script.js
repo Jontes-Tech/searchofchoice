@@ -25,6 +25,9 @@ if (urlParams.has("q")) {
         case "3": // Duck Duck Go
             window.location.replace("https://duckduckgo.com/?q=" + q);
             break;
+        case "4": // Qwant
+            window.location.replace("https://qwant.com/?q=" + q);
+            break;
     }
 } else {
     document.getElementById("changable").innerHTML = "Welcome to SearchOfChoice. You may create a SearchOfChoice-Link <a href=\"/create\">here<a>."
