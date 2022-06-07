@@ -11,6 +11,7 @@ function getCookie(cName) {
     return res
 }
 if (urlParams.has("q")) {
+    document.getElementById("changable").innerHTML = "Attempting Redirection..."
     var q = urlParams.get("q");
     switch (getCookie("search_engine")) {
         case undefined:
