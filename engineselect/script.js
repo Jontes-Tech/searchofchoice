@@ -1,5 +1,3 @@
-// Todo: Functionality for "next" url query.
-// Function called from the HTML, to select the search engine of choice.
 function setEngine(id) {
     document.cookie = `search_engine=${id}; expires=${new Date(new Date().getTime()+1000*60*60*24*365).toGMTString()}; path=/`;
     console.log("Search Engine Chosen: "+id)
@@ -10,3 +8,10 @@ function setEngine(id) {
     } else {
         alert("Thank you for choosing the search engine!");
 }}
+
+const buttons = document.querySelectorAll(".button");
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+        setEngine(i+1);
+    });
+}

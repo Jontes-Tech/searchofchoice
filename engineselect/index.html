@@ -11,9 +11,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="/footer.css">
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/noscript?next=engineselect" />
+    </noscript>
 </head>
 <body>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <section class="hero">
         <div class="hero-body">
           <p class="title">
@@ -22,11 +26,20 @@
           <p class="subtitle">
             Please choose a <strong>search engine</strong>. This will be remebered in your cookies.
           </p>
-          <button class="button" onclick="setEngine(1)">SearX</button>
-          <button class="button" onclick="setEngine(2)">Google</button>
-          <button class="button" onclick="setEngine(3)">DuckDuckGo</button>
-          <button class="button" onclick="setEngine(4)">Qwant</button>
+          <button id="btn1" class="button">SearX</button>
+          <button id="btn2" class="button">Google</button>
+          <button id="btn3" class="button">DuckDuckGo</button>
+          <button id="btn4" class="button">Qwant</button>
         </div>
       </section>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>This website</strong> was made by <a href="https://github.com/Jontes-Tech">Jonte</a>. The source code and website content is licensed
+            <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL</a>.
+            <a href="/about/javascript.html" data-jslicense="1">LibreJS</a>
+          </p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -34,3 +34,10 @@ function shorturl() {
     }
     alert("Copied Short URL to Your Clipboard");
 }
+
+for (const button of document.querySelectorAll('button')) {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        submit();
+    });
+}

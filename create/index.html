@@ -11,9 +11,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="/footer.css">
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/noscript?next=create" />
+    </noscript>
 </head>
 <body>
-	<script src="/create/script.js"></script>
+	<script defer src="/create/script.js"></script>
     <section class="hero">
         <div class="hero-body">
           <p class="title">
@@ -33,13 +37,21 @@
             <option value="jontespage">SearchOfChoice.Jontes.Page (Long branded)</option>
             <option value="short">Soc.Jontes.Page (Short branded)</option>
             <option value="vercelapp">SearchOfChoice.Vercel.App (Long unbranded)</option>
-            <button class="button is-primary"onclick="submit();">Create Link</button>
           </select>
           </div>
           <br>
-          <button class="button is-primary" onclick="submit();">Create Link</button>
+          <button class="button is-primary">Create Link</button>
         </div>
       </div>
       </section>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>This website</strong> was made by <a href="https://github.com/Jontes-Tech">Jonte</a>. The source code and website content is licensed
+            <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL</a>.
+            <a href="/about/javascript.html" data-jslicense="1">LibreJS</a>
+          </p>
+        </div>
+    </footer>
 </body>
 </html>
