@@ -16,7 +16,7 @@ if (urlParams.has("q")) {
         case undefined:
             window.location = "/engineselect/?next="+q
             break;
-        case "1": // SearX using the tiekoetter instance. If you want me to change the instance, please contact me.
+        case "1": // SearX using the tiekoetter instance.
             window.location.replace("https://searx.tiekoetter.com/search?q=" + q);
             break;
         case "2": // Google
@@ -28,6 +28,8 @@ if (urlParams.has("q")) {
         case "4": // Qwant
             window.location.replace("https://qwant.com/?q=" + q);
             break;
+        case "5": // Custom
+            window.location.replace(getCookie("custom_engine") + "/search?q=" + q);
     }
 } else {
     document.getElementById("changable").innerHTML = "Welcome to SearchOfChoice. You may create a SearchOfChoice-Link <a href=\"/create\">here<a>."

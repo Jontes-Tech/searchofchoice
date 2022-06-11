@@ -6,6 +6,8 @@ As simple as that.
 
 The program gives the user a choice of what search engine they like once a year, and when they recieve a link to SearchOfChoice they will automatically redirect to their favorite search engines.
 
+Contribution is greatly apperiated  
+
 ## Supported Search Engines
 Not many to be honest
 * SearX with the tiekoetter instance.
