@@ -1,6 +1,7 @@
 # SearchOfChoice
-Search of choice has 2 main pages
+Search of choice has 3 main pages
 * /create - The place where you create the links.
+* /engineselect - The place where you can change your engine of choice
 * / - The place where you visit links.
 As simple as that.
 
@@ -12,7 +13,14 @@ Contribution is greatly apperiated
 Not many to be honest
 * SearX with the tiekoetter instance.
 * DuckDuckGo
-* Gooogle
+* Google
+* Bing
+* Yahoo
+* Aol
+* Ecosia
+* Qwant
+* Ask.com
+* And customs
 To add more, please do a pull request.
 
 ## Disclaimer

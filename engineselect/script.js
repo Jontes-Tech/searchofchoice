@@ -28,6 +28,22 @@ function IDToString(id) {
         case 4:
             Response("Search Engine has been changed to: Qwant")
             break;
+        case 6:
+            Response("Search Engine has been changed to: Bing")
+            break;
+        case 7:
+            Response("Search Engine has been changed to: Ask.com")
+            break;
+        case 8:
+            Response("Search Engine has been changed to: Ecosia")
+            break;
+        case 9:
+            Response("Search Engine has been changed to: Aol")
+            break;
+        case 10:
+            Response("Search Engine has been changed to: Yahoo")
+            break;
+
     }
 }
 function setEngine(id) {
