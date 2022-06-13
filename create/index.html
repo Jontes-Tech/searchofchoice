@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,52 +12,56 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/style.css">
     <noscript>
-      <meta http-equiv="refresh" content="0; url=/noscript?next=create" />
+        <meta http-equiv="refresh" content="0; url=/noscript?next=create" />
     </noscript>
 </head>
+
 <body>
-	<script defer src="/create/script.js"></script>
+    <script defer src="/create/script.js"></script>
     <section class="hero">
         <div class="hero-body">
-          <p class="title">
-            Create a SearchOfChoice Link
-          </p>
-          <p class="subtitle">
-            Below you can create a link to a search engine.
-          </p>
-          <div class="container">
-          <div class="control"></div>
-          <div class="field">
-            <label for="textbox">Enter your search term</label>
-            <input class="input" name="textbox" id="textbox" type="text"></input>
-          </div>
-          <div class="field">
-            <label for="domain">Choose a domain name:</label>
+            <p class="Title">
+                Create a SearchOfChoice Link
+            </p>
+            <p class="Subtitle">
+                Below you can create a link to a search engine.
+            </p>
+            <div class="container">
+                <div class="control"></div>
+                <div class="field">
+                    <label for="textbox">Enter your search term</label>
+                    <input class="input" name="textbox" id="textbox" type="text"></input>
+                </div>
+                <div class="field" style="text-align: center;">
+                    <label for="domain">Choose a domain name:</label>
+                    <br>
+                    <div class="select">
+                        <select name="domain" id="domain">
+                            <option value="jontespage">SearchOfChoice.Jontes.Page (Long branded)</option>
+                            <option value="short">Soc.Jontes.Page (Short branded)</option>
+                            <option value="vercelapp">SearchOfChoice.Vercel.App (Long unbranded)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
             <br>
-          <div class="select">
-          <select name="domain" id="domain">
-            <option value="jontespage">SearchOfChoice.Jontes.Page (Long branded)</option>
-            <option value="short">Soc.Jontes.Page (Short branded)</option>
-            <option value="vercelapp">SearchOfChoice.Vercel.App (Long unbranded)</option>
-          </select>
-          </div>
-          </div>
-          </div>
-          <br>
-          <button class="button is-primary">Create Link</button>
+            <div style="text-align: center;">
+                <button class="button is-primary">Create Link</button>
+            </div>
         </div>
-      </div>
-      </section>
-      <footer class="footer">
+        </div>
+    </section>
+    <footer class="footer">
         <div class="content has-text-centered">
-          <p>
-            <strong>This website</strong> was made by <a href="https://github.com/Jontes-Tech">Jonte</a>. The source code and website content is licensed
-            <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL</a>.
-            <a href="/about/javascript.html" data-jslicense="1">LibreJS</a>
-          </p>
+            <p class="footerText">
+                <strong>This website</strong> was made by <a href="https://github.com/Jontes-Tech">Jonte</a>. The source code and website content is licensed
+                <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL</a>.
+                <a href="/about/javascript.html" data-jslicense="1">LibreJS</a>
+            </p>
         </div>
     </footer>
 </body>
+
 </html>
