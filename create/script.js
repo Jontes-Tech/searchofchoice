@@ -1,3 +1,7 @@
+function Response(text) {
+    const change = document.getElementById("info");
+    change.innerHTML = text;
+}
 function submit()   {
     console.log("Test");
     switch (document.getElementById('domain').value) {
@@ -10,18 +14,20 @@ function submit()   {
         case 'vercelapp':
             longunbranded();
             break;
+        case 'tiny':
+            tinyurl()
         default:
-            longbranded();
+            tinyurl();
             break;
     }
 }
 function longbranded() {
     navigator.clipboard.writeText('https://searchofchoice.jontes.page/?q=' + encodeURIComponent(document.getElementById('textbox').value));
-    alert("Copied Long URL to Your Clipboard");
+    Response("Copied Long URL to Your Clipboard");
 }
 function longunbranded() {
     navigator.clipboard.writeText('https://searchofchoice.vercel.app/?q=' + encodeURIComponent(document.getElementById('textbox').value));
-    alert("Copied Long URL to Your Clipboard");
+    Response("Copied Long URL to Your Clipboard");
 }
 function shorturl() {
     const Http = new XMLHttpRequest();
@@ -32,7 +38,11 @@ function shorturl() {
     Http.onreadystatechange = (e) => {
         navigator.clipboard.writeText(Http.responseText);
     }
-    alert("Copied Short URL to Your Clipboard");
+    Response("Copied Short URL to Your Clipboard");
+}
+
+function tinyurl() {
+    RegisterURL()
 }
 
 for (const button of document.querySelectorAll('button')) {
@@ -40,4 +50,19 @@ for (const button of document.querySelectorAll('button')) {
         e.preventDefault();
         submit();
     });
+}
+
+
+function RegisterURL() {
+    axios.post('https://soc.jontes.page/add', {
+        term: encodeURIComponent(document.getElementById('textbox').value)
+    })
+    .then(function (response) {
+        navigator.clipboard.writeText("https://soc.jontes.tech/q/" + response);
+        Response("https://soc.jontes.tech/q/" + response)
+        console.log(response);
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
 }
