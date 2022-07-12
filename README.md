@@ -10,9 +10,9 @@ Contribution is greatly apperiated
 
 ## Supported Search Engines
 Not many to be honest
-* SearX with the tiekoetter instance.
 * DuckDuckGo
 * Gooogle
+* SearX with the tiekoetter instance.
 To add more, please do a pull request.
 
 ## Disclaimer
