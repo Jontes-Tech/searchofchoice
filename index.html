@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SearchOfChoice</title>
-    <link rel="stylesheet" href="https://jontes.page/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="https://jontes.page/css/bulma-prefers-dark.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="/footer.css">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <noscript>
-      <meta http-equiv="refresh" content="0; url=/noscript" />
-    </noscript>
-    <script src="script.js"></script>
-</head>
-<body>
-  <section class="hero">
-    <div class="hero-body">
-      <p class="title">
-        SearchOfChoice
-      </p>
-      <p id="changable" class="subtitle">
-        Welcome to Search Of Choice! Create a link <a href="/create/">here</a> or change your search engine <a href="/engineselect/">here</a>.
-      </p>
-    </div>
-  </section>
-    <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            <strong>This website</strong> is being developed by <a href="https://github.com/Jontes-Tech">Jonte</a> and <a href="https://github.com/Pajsen9263/">Pajsen</a>. The source code and website content is licensed
-            <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL</a>.
-            <a href="/about/javascript.html" data-jslicense="1">LibreJS</a>
-          </p>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SearchOfChoice</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
+        <link rel="manifest" href="/favicon/site.webmanifest"/>
+        <noscript>
+            <meta http-equiv="refresh" content="0; url=/noscript"/>
+        </noscript>
+        <script src="script.js"></script>
+        <style>
+            * {
+                font-family: "Poppins", sans-serif;
+                padding: 0;
+                margin: 0;
+                color: #fff;
+            }
+            body {
+                background: #1a1b1b;
+            }
+            .search-container {
+                max-width: 600px;
+                margin: 50px auto;
+            }
+            input {
+                display: block;
+                width: calc(100% - 24px);
+                font-size: 18px;
+                font-weight: 600;
+                color: #4b00ff;
+                padding: 10px;
+                border-radius: 10px;
+                border: 2px solid #4b00ff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="search-container">
+            <form action="">
+                <h1>Search Of Choice</h1>
+                <input type="text" placeholder="Please enter a search term here..." name="c"/>
+                <p>SOC is licensed under the GPL version 3 or later. <a href="/about/javascript.html" data-jslicense="1">LibreJS</a><br><a href="/engineselect/">Change your search engine preferences</a></p>
+            </form>
         </div>
-    </footer>
-</body>
+    </body>
 </html>

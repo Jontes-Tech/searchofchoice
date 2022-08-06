@@ -10,6 +10,11 @@ function getCookie(cName) {
     })
     return res
 }
+if (urlParams.has("c")) {
+    alert("The \""+urlParams.get("c")+"\" SearchOfChoice-Link created, and was copied to your clipboard.");
+    navigator.clipboard.writeText("https://searchofchoice.jontes.page?q="+urlParams.get("c"));
+    window.location.replace("/");
+}
 if (urlParams.has("q")) {
     var q = urlParams.get("q");
     switch (getCookie("search_engine")) {
