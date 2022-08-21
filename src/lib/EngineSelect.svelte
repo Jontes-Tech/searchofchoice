@@ -26,10 +26,3 @@
 >
 <button on:click={() => setEngine('https://qwant.com/?q=')}>Qwant</button>
 <button on:click={() => alert('Not implemented :(')}>Custom</button>
-
-<style>
-    button {
-        color: white;
-        margin: 5px;
-    }
-</style>

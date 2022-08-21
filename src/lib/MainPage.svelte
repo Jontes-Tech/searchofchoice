@@ -10,6 +10,12 @@
     let q = '';
 
     $: link = 'https://searchofchoice.jontes.page/?q=' + encodeURIComponent(q);
+
+    const shorten = async () => {
+        const response = await fetch(`https://l.og.ax/${link}`);
+        const short = await response.text();
+        link = short;
+    };
 </script>
 
 <div class="search-container">
@@ -23,6 +29,11 @@
         />
         <br />
         <input bind:value={link} />
-        <!-- <button on:click={(e) => {e.preventDefault(); alert("Not implemented")}}>Shorten link</button> -->
+        <button
+            on:click={(e) => {
+                e.preventDefault();
+                shorten();
+            }}>Shorten link (may decrease privacy)</button
+        >
     </form>
 </div>

@@ -79,3 +79,8 @@ input {
     border-radius: 10px;
     border: 2px solid #4b00ff;
 }
+
+button {
+    color: white;
+    margin: 5px;
+}
