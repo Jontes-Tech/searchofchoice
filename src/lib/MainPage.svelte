@@ -29,6 +29,7 @@
         />
         <br />
         <input bind:value={link} />
+        <br />
         <button
             on:click={(e) => {
                 e.preventDefault();
