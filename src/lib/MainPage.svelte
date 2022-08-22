@@ -29,16 +29,12 @@
         />
         <br />
         <input bind:value={link} />
-        <br />
         <button
             on:click={(e) => {
                 e.preventDefault();
                 shorten();
             }}>Shorten link (may decrease privacy)</button
         >
-        <br />
-        <br />
         <button>Search</button>
-        <br />
     </form>
 </div>
