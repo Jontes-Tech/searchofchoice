@@ -35,5 +35,6 @@
                 shorten();
             }}>Shorten link (may decrease privacy)</button
         >
+        <button>Search</button>
     </form>
 </div>
