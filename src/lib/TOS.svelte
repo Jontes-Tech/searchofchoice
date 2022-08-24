@@ -40,6 +40,35 @@
         </li>
     </ol>
 
+    <h2>Waiver of liability</h2>
+    <ol>
+        <li>
+            <span>
+                <b>SearchOfChoice</b> comes with ABSOLUTELY NO WARRANTY, to the extent
+                allowed by applicable law.
+            </span>
+        </li>
+        <li>
+            <span> No <b>Contributor</b> shall ever be held liable for </span>
+            <ol>
+                <li>
+                    any use of <b>SearchOfChoice</b>,
+                </li>
+                <li>
+                    the inaccessability or unavailability of <b
+                        >SearchOfChoice</b
+                    >
+                    or of <b>Our Domains</b>,
+                </li>
+                <li>
+                    or, to the extent allowed by applicable law, <b
+                        >anything else</b
+                    >.
+                </li>
+            </ol>
+        </li>
+    </ol>
+
     <h2>Use common sense</h2>
     <ol>
         <li>
