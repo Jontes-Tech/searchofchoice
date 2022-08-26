@@ -7,10 +7,10 @@
 </script>
 
 <main>
-    {#if page === 'engineselect' || !localStorage.getItem('engine')}
-        <EngineSelect />
-    {:else if page === 'tos'}
+    {#if page === 'tos'}
         <TOS />
+    {:else if page === 'engineselect' || !localStorage.getItem('engine') && page !== 'tos'}
+        <EngineSelect />
     {:else}
         <MainPage />
     {/if}
