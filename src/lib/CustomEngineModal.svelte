@@ -13,9 +13,9 @@
 />
 <div class="btns">
     <button on:click={close}> Cancel </button>
-    <button class="submit-btn" on:click={() => setEngine(engineURL)}
-        > Submit </button
-    >
+    <button class="submit-btn" on:click={() => setEngine(engineURL)}>
+        Submit
+    </button>
 </div>
 
 <style>
