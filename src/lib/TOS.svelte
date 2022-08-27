@@ -19,8 +19,7 @@
             <span>
                 <b>Our domain names</b>, hereafter <b>Our Domains</b>, are
                 internet location markers one or more <b>Contributors</b> own or
-                control, including, but not limited to, SearchOfChoice.jontes.page,
-                SearchOfChoice.vercel.app, and l.og.ax.
+                control, including, but not limited to, SearchOfChoice.jontes.page and l.og.ax.
             </span>
         </li>
         <li>
