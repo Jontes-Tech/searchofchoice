@@ -6,7 +6,7 @@
     <ol>
         <li>
             <span>
-                <b>SearchOfChoice</b> is the internet web page in front of you.
+                <b>SearchOfChoice</b> is the internet web site in front of you.
             </span>
         </li>
         <li>
